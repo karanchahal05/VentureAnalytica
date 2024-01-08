@@ -1,0 +1,532 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(FONTS/NotoSansJP-Light.otf);
+    font-family:normaltext;
+}
+  
+@font-face {
+    src: url(FONTS/HindSiliguri-Regular.ttf);
+    font-family:subtitle;
+}
+  
+@font-face {
+    src: url(FONTS/NotoSansJP-Regular.otf);
+    font-family:titletext;
+}
+  
+@font-face {
+    src: url(FONTS/MuseoModerno-Medium.ttf);
+    font-family:heading;
+}
+  
+@font-face {
+    src: url(FONTS/nasalization-rg.otf);
+    font-family:headingtitle;
+}
+
+  .white {
+    color:#ffffff;
+  }
+  
+  .lightblue {
+    color:#32aee3;
+  }
+  
+  .darkblue {
+    color:#1c74b2;
+  }
+  
+  .headingtitle-white {
+    font-family:subtitle;
+    font-size:34px;
+    color:#ffffff;
+  }
+  
+  .headingtitle-black {
+    font-family:subtitle;
+    font-size:34px;
+    color:#000000;
+  }
+  
+  .smallheading-white {
+    font-family:normaltext;
+    font-size:30px;
+    color:#ffffff;
+  }
+  
+  .heading-white {
+    font-family:heading;
+    font-size:40px;
+    color:#ffffff;
+  }
+  
+  .heading-black {
+    font-family:heading;
+    font-size:40px;
+    color:#000000;
+  }
+  
+  .titletext-white {
+    font-family:titletext;
+    font-size:30px;
+    color:#ffffff;
+  }
+  
+  .titletext-black {
+    font-family:titletext;
+    font-size:30px;
+    color:#000000;
+  }
+  
+  
+  .subtitle-white {
+    font-family:subtitle;
+    font-size:25px;
+    color:#ffffff;
+    font-weight:800;
+  }
+  
+  .subtitle-black {
+    font-family:subtitle;
+    font-size:25px;
+    color:#000000;
+    font-weight:800;
+  }
+  
+  .subtitle {
+    font-family:subtitle;
+    font-size:25px;
+    font-weight:800;
+  }
+  
+  .normaltext-white {
+    font-family:normaltext;
+    font-size:19px;
+    color:#ffffff;
+    line-height:30px;
+  }
+  
+  .normaltext-grey {
+    font-family:normaltext;
+    font-size:19px;
+    color:#d1d1d1;
+    line-height:30px;
+  }
+  
+  .grey {
+    color:#d1d1d1;
+  }
+  
+  .captiongrey {
+    color:#969696;
+  }
+  
+  .normaltext {
+    font-family:normaltext;
+    font-size:19px;
+    line-height:30px;
+  }
+  
+  .normaltext-black {
+    font-family:normaltext;
+    font-size:19px;
+    color:#000000;
+    line-height:30px;
+  }
+  
+  .normal-bold-black {
+    font-family:subtitle;
+    font-size:19px;
+    color:#000000;
+    font-weight:800;
+  }
+  
+  .normal-bold-white {
+    font-family:subtitle;
+    font-size:19px;
+    color:#ffffff;
+    font-weight:800;
+  }
+  
+  .smalltext-white {
+    font-family:normaltext;
+    font-size:15px;
+    color:#ffffff;
+    line-height:30px;
+  }
+  
+  .smalltext-black {
+    font-family:normaltext;
+    font-size:15px;
+    color:#000000;
+    line-height:30px;
+  }
+  
+  .smalltext-error {
+    font-family:normaltext;
+    font-size:15px;
+    line-height:22px;
+  }
+  
+  .smalltext {
+    font-family:normaltext;
+    font-size:15px;
+    line-height:30px;
+  }
+  
+  .goodletter {
+    font-family:normaltext;
+    font-weight:800;
+  }
+  
+  .goodletterheading {
+    font-family:titletext;
+    font-weight:800;
+  }
+  
+  .italic {
+    font-style:italic;
+  }
+
+  .backgroundlightblue {
+    background-color:#32aee3;
+  }
+  
+  .backgrounddarkblue {
+    background-color:#1c74b2;
+  }
+  
+  .backgroundgrey {
+    background-color:#ebecf0;
+  }
+  
+  .backgroundblack {
+    background-color:#000010;
+  }
+  
+  .backgroundbutblue {
+    background-color:#32aee3;
+  }
+  
+  .backgroundnone {
+    background-color:transparent;
+  }
+  
+  .colordarkblue {
+    color:#1c74b2;
+  }
+  
+  .buttonicondark:hover {
+    color:#000010;
+    cursor:pointer;
+  }
+  
+  .linkcolor {
+    color:#0277de;
+  }
+
+  .highlight {
+    color:#DC143C;
+  }
+
+  .highlight-g {
+    color:#008000;
+  }
+
+  .buttonlight:hover {
+    background-color:#1c74b2;
+    cursor:pointer;
+  }
+  
+  .buttondark:hover {
+    background-color:#000010;
+    cursor:pointer;
+  }
+
+/* light light blue color - #32aee3*/
+/* light blue color - #1c74b2 */
+/* dark color- #000010 */
+/* possible light blue color- #57abff*/
+
+  .grid {
+    display:grid;
+  }
+  
+  .right {
+    justify-items:right;
+  }
+  
+  .left {
+    justify-items:left;
+  }
+  
+  .center {
+    margin:auto;
+  }
+  
+  .textcenter {
+    text-align:center;
+  }
+  
+  .centervertically {
+    align-self:center;
+  }
+  
+  .centerhorizontally {
+    justify-self:center;
+  }
+
+  .toppadding {
+    padding-top:10px;
+  }
+  
+  .bottompadding {
+    padding-bottom:10px;
+  }
+  
+  .sidetosidepadding{
+    padding-right:10px;
+    padding-left:10px;
+  }
+  
+  .linkstyleremove {
+    text-decoration:none;
+  }
+  
+  .buttonstyleremove {
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .buttonstyleremove1 {
+    border:none;
+    outline:none;
+  }
+  
+  .transparentbutton {
+    background-color:transparent;
+  }
+  
+  .divclick {
+    cursor:pointer;
+  }  
+
+  .logsplit {
+    display:grid;
+    grid-template-columns:1fr 1.5fr;
+  }
+
+  .logingrid {
+    display:grid;
+    grid-template-columns:2fr 6fr 2fr;
+  }
+
+  .headbar {
+    display:grid;
+    grid-template-columns:0.3fr 2fr 0.5fr;
+  }
+  
+  .colgrid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  
+  .addventuresgrid {
+    display:grid;
+    grid-template-columns:1.5fr 6fr 1.5fr;
+  }
+
+  .ratingscirclegrid {
+    display:grid;
+    grid-template-columns:1fr 6fr 1fr;
+  }
+
+  .commentsgrid {
+    display:grid;
+    grid-template-columns:1fr 7fr 1fr;
+  }
+  
+  .spambuttongrid {
+    display:grid;
+    grid-template-columns:0.5fr 7fr 0.5fr;
+  }
+
+  .spambuttongrid1 {
+    display:grid;
+    grid-template-columns:1fr 7fr;
+  }
+  
+  .img-80 {
+    width:80%;
+  }
+
+  .img-75 {
+    width:75%;
+  }
+
+  .img-65 {
+    width:65%;
+  }
+
+  .gap-r-5 {
+    grid-row-gap:5px;
+  }
+  
+  .gap-r-7 {
+    grid-row-gap:7px;
+  }
+  
+  .gap-r-10 {
+    grid-row-gap:10px;
+  }
+  
+  .gap-r-15 {
+    grid-row-gap:15px;
+  }
+  
+  .gap-r-22 {
+    grid-row-gap:22px;
+  }
+  
+  .gap-r-25 {
+    grid-row-gap:25px;
+  }
+  
+  .gap-r-30 {
+    grid-row-gap:30px;
+  }
+  
+  .gap-r-85 {
+    grid-row-gap:85px;
+  }
+  
+  .gap-c-10 {
+    grid-column-gap:10px;
+  }
+  
+  .gap-c-20 {
+    column-gap:20px;
+  }
+
+  .inputfield {
+    width:100%;
+    padding:12px;
+    border:2px solid #1c74b2;
+    outline-width:medium;
+    outline-color:#32aee3;
+    background-color:transparent;
+    font-size:16px;
+    color:#ffffff;
+  }
+  
+  .inputfield:focus::placeholder {
+    color:transparent;
+  }
+  
+  .inputfield:focus {
+    border:0px solid #0171bc;
+  }
+  
+  .inputfield::placeholder {
+    color:#d1d1d1;
+    transition:color 0.3s ease;
+  }
+
+  .inputfield1 {
+    width:100%;
+    padding:12px;
+    border:2px solid #1c74b2;
+    outline-width:medium;
+    outline-color:#32aee3;
+    background-color:transparent;
+    font-size:16px;
+    color:#000000;
+  }
+  
+  .inputfield1:focus::placeholder {
+    color:transparent;
+  }
+  
+  .inputfield1:focus {
+    border:0px solid #0171bc;
+  }
+  
+  .inputfield1::placeholder {
+    color:#000000;
+    transition:color 0.3s ease;
+  }
+
+  .inputfield2 {
+    width:100%;
+    padding:12px;
+    border:2px solid #000000;
+    border-radius:8px;
+    outline-width:medium;
+    outline-color:#0171bc;
+    font-size:16px;
+  }
+  
+  .inputfield2:focus::placeholder {
+    color:transparent;
+  }
+  
+  .inputfield2:focus {
+    border:0px solid #0171bc;
+  }
+  
+  .inputfield2::placeholder {
+    color:#575757;
+    transition:color 0.3s ease;
+  }
+
+  .boxshadow {
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+  }
+
+  .venturesgrid {
+    display:grid;
+    grid-template-columns:1.5fr 5fr 1.5fr;
+  }
+
+  .ventureboxgrid {
+    display:grid;
+    grid-template-columns:2.5fr 0.7fr;
+  }
+
+  .venturesgapping {
+    display:grid;
+    grid-template-columns:0.5fr 6fr 0.5fr;
+  }
+
+  .ratingsgrid {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-column-gap:5px;
+  }
+
+.pie {
+    width: 80%;
+    height: auto;
+    border-radius:50%;
+}
+
+.pie .background{
+    fill:none;
+    stroke:#eaeaea;
+    stroke-width:4;
+
+}
+ .pie .chart{
+    fill:none;
+    stroke: #32aee3;
+    stroke-width:4;
+}
+
